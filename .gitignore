@@ -1,0 +1,14 @@
+# Python缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# .specstory文件夹
+.specstory/
+
+envs/*
+nets/*
+
+tsc_rl_dataset.json
+tsc_sft_dataset.json
+history_data/*
