@@ -40,8 +40,8 @@ python run_tsc_rft.py
 
 ### 1. 模型选择
 
-- 基础模型：DeepSeek-R1-Distill-Qwen-1.5B（计算资源受限）
-- 版本：Instruct版本（指令理解能力更强）
+- 指令微调模型：Qwen/Qwen2.5-7B-Instruct
+- 推理模型：DeepSeek-R1-Distill-Qwen-1.5B（计算资源受限）
 
 ### 2. 训练数据
 
