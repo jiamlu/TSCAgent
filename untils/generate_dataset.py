@@ -1,6 +1,6 @@
 import pickle
 import json
-from description_generator import generate_traffic_descriptions
+from untils.description_generator import generate_traffic_descriptions
 
 def generate_training_data(data_path, output_path, last_n_scenes=5, last_n_steps=30):
     """

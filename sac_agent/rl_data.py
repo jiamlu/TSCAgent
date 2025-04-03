@@ -12,7 +12,7 @@ sys.path.append(str(Path.cwd())+'/envs/')
 from envs.trafficenv import SumoEnv
 
 import pickle
-from sac_online import SAC
+from sac_agent.sac_online import SAC
 import random
 
 
