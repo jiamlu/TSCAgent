@@ -7,8 +7,15 @@ __pycache__/
 .specstory/
 
 envs/*
+!envs/
+!envs/.gitkeep
+
 nets/*
+!nets/
+!nets/.gitkeep
 
 tsc_rl_dataset.json
 tsc_sft_dataset.json
 history_data/*
+!history_data/
+!history_data/.gitkeep
