@@ -242,7 +242,7 @@ def upload_to_huggingface(model, tokenizer, repo_id, token):
     """
     # 保存模型到临时目录
     temp_dir = "temp_model"
-    model.save_pretrained_merged(temp_dir, tokenizer, save_method="merged_4bit")
+    model.save_pretrained_merged(temp_dir, tokenizer, save_method="merged_16bit")
     
     # 上传到 Hugging Face
     api = HfApi(token=token)

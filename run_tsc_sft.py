@@ -29,7 +29,7 @@ def load_base_model(max_seq_length=2048):
     )
     return model, tokenizer
 
-def prepare_training_data(dataset_name="jiam/tsc-datasets", num_samples=1000):
+def prepare_training_data(tokenizer, num_samples=1000, dataset_name="jiam/tsc-datasets"):
     """
     准备训练数据集
     
@@ -218,7 +218,7 @@ def main():
     model, tokenizer = load_base_model()
     
     # 2. 准备训练数据（使用1000条样本）
-    dataset = prepare_training_data(num_samples=1000)
+    dataset = prepare_training_data(tokenizer, num_samples=1000)
     
     # 3. 配置模型用于训练
     model = setup_model_for_training(model)
